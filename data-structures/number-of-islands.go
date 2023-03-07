@@ -1,4 +1,4 @@
-package main
+package datastructures
 
 import "fmt"
 
@@ -15,7 +15,6 @@ func spread(i, j int, grid [][]byte) {
 	spread(i, j+1, grid)
 	spread(i, j-1, grid)
 }
-
 
 // problem-link : https://leetcode.cn/problems/number-of-islands/
 // 可以把每块陆地看成是一块待浇水的农田，旁边的水会蔓延进整个农田
@@ -34,7 +33,7 @@ func numIslands(grid [][]byte) int {
 	return numIslands
 }
 
-func main() {
+func RunNumIslands() {
 	var grid = [][]byte{
 		{'1', '1', '0', '0', '0'},
 		{'1', '1', '0', '0', '0'},
